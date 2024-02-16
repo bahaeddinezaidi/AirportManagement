@@ -13,7 +13,7 @@ namespace AM.ApplicationCore.Domain
         public string LastName { get; set; }
         public DateTime  BirthDate{ get; set; }
         public int TellNumber{ get; set; }
-        public string EmailAdress { get; set; }
+        public string EmailAddress { get; set; }
         ICollection<Flight> Flights { get; set; }
         public bool checkprofile(string nom ,string prenom)
         {
@@ -21,7 +21,7 @@ namespace AM.ApplicationCore.Domain
         }
         public bool checkprofile(string nom ,string prenom ,string email)
         {
-            return FirstName.Equals(nom) && LastName.Equals(prenom) && EmailAdress.Equals(email);
+            return FirstName.Equals(nom) && LastName.Equals(prenom) && EmailAddress.Equals(email);
         }
         public virtual void PassengerType()
         {
