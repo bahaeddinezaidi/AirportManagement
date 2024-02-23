@@ -14,5 +14,6 @@ namespace AM.ApplicationCore.Domain
 
         public PlaneType PlaneType { get; set; }
         ICollection<Flight> Flights { get; set;}
+        public string  Airlinelogo { get; set; }
     }
 }
